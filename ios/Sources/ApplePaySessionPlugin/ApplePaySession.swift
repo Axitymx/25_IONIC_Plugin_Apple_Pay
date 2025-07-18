@@ -8,6 +8,7 @@ import PassKit
     private var paymentWasAuthorized: Bool = false
     private var paymentInfo: ApplePayPaymentRequest?
     private let config: ApplePayConfig
+    private var timer: Timer?
 
     init(config: ApplePayConfig) {
         self.config = config
@@ -49,7 +50,8 @@ import PassKit
                 error: .problemClosingPaymentSheet
             )
         }
-
+        self.timer?.invalidate()
+        self.timer = nil
         self.completeSessionWithTimer = false
         let pkStatus = ApplePayConverter.convertToStatus(from: status)
         self.currentCompletetionUI?(
@@ -106,7 +108,7 @@ import PassKit
 
     private func initiateTimerToCloseSheet() {
 
-        Timer.scheduledTimer(
+        self.timer = Timer.scheduledTimer(
             withTimeInterval: self.config.timeToCloseSheet,
             repeats: false
         ) { [weak self] timer in
