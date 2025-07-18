@@ -1,5 +1,5 @@
 {
-  "name": "@capacitor-community/applepay",
+  "name": "@capacitor/applepay",
   "version": "1.0.0",
   "description": "Plugin to get an Apple Pay session",
   "main": "dist/plugin.cjs.js",
