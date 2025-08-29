@@ -37,6 +37,8 @@ var capacitorApplePaySession = (function (exports, core) {
 
     exports.ApplePaySession = ApplePaySession;
 
+    Object.defineProperty(exports, '__esModule', { value: true });
+
     return exports;
 
 })({}, capacitorExports);
