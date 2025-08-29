@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "CapacitorApplepay",
-    platforms: [.iOS(.v14)],
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "CapacitorApplepay",
