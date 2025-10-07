@@ -60,7 +60,7 @@ jobs:
       - name: Verify publication
         run: |
           VERSION=$(node -p "require('./package.json').version")
-          echo "✅ Successfully published @axity/certificate-info@$VERSION to AWS CodeArtifact"
+          echo "✅ Successfully published @axity/applepay@$VERSION to AWS CodeArtifact"
 
       - name: Clean up .npmrc
         if: always()
