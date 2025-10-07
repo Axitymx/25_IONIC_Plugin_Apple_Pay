@@ -1,6 +1,7 @@
 # node files
 node_modules
-
+.npmrc
+.npmrc.*
 # iOS files
 Pods
 Podfile.lock
