@@ -1,6 +1,7 @@
 # node files
 node_modules
-
+.npmrc
+.npmrc.*
 # iOS files
 Pods
 Podfile.lock
@@ -67,3 +68,5 @@ captures
 
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
+
+dist

@@ -3,7 +3,7 @@ import Foundation
 import PassKit
 
 public class ApplePayConfig {
-    static let DEFAULT_TIME_TO_CLOSE_SHEET: Int = 30000 //ms
+    static let DEFAULT_TIME_TO_CLOSE_SHEET: Int = 30000 // ms
 
     public let merchantId: String?
     public let supportedNetworks: [String]

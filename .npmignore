@@ -1,0 +1,19 @@
+# Desarrollo
+src/
+*.ts
+tsconfig.json
+rollup.config.mjs
+
+# Testing
+android/src/test/
+android/src/androidTest/
+ios/Tests/
+
+# Build
+node_modules/
+.github/
+.vscode/
+
+# Archivos temporales
+*.log
+.DS_Store
