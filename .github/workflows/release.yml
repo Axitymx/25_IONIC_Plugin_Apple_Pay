@@ -30,6 +30,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+      
+      - name: Reinstall Rollup (fix optional dependencies)
+        run: npm install --no-save rollup
 
       - name: Run lint
         run: npm run lint
