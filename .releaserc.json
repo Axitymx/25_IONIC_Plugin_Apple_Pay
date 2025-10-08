@@ -69,7 +69,7 @@
             "label": "NPM Package"
           }
         ],
-        "successComment": "This ${issue.pull_request ? 'PR is included' : 'issue has been resolved'} in version ${nextRelease.version}\n\nThe release is available on:\n- [npm package (@latest dist-tag)](https://www.npmjs.com/package/@axity/applepay)\n- [GitHub release](${releases[0].url})\n\nYour **semantic-release** bot"
+        "successComment": false
       }
     ],
     [
